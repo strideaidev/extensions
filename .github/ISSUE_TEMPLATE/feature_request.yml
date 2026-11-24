@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest something StrideAI should do.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Describe the need, not confidential details of your project.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: The job you want done and who in the team needs it.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: How could StrideAI help
+      description: What you imagine it should do or show. Sketches and examples welcome.
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your role
+      options: [Developer, Tester, Scrum Master, Product Owner, Manager, Release Train Engineer, DevOps engineer, Administrator, Other]

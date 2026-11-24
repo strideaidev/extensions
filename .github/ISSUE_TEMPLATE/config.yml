@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private request (billing, activation, organization key)
+    url: https://aistride.dev/#/support
+    about: Anything that involves your organization name, invoices, keys or people. Filed privately, answered by e-mail.
+  - name: Security vulnerability
+    url: https://github.com/strideaidev/extensions/security/advisories/new
+    about: Report privately. Never post a vulnerability as a public issue.
+  - name: Documentation
+    url: https://aistride.dev/docs/
+    about: Install, use, administer and buy StrideAI.

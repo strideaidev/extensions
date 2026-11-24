@@ -1,0 +1,69 @@
+name: Bug report
+description: Something in StrideAI does not work as documented.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Do not paste organization keys (`sk_org_…`), API keys, tokens, work item or code content, or names and e-mail addresses. Use the [support page](https://aistride.dev/#/support) for anything private.
+  - type: dropdown
+    id: extension
+    attributes:
+      label: Extension
+      options:
+        - StrideAI Assistant
+        - AI Test Case Creator
+        - AI Work Item Improver
+        - AI Work Item Analyzer
+        - AI PR Description
+        - AI Release Notes
+        - AI Estimation
+        - Engineering Excellence
+        - Pipeline task
+        - Website or documentation
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      description: Shown under Settings → About, or on the Marketplace listing.
+      placeholder: "0.65.199"
+  - type: dropdown
+    id: host
+    attributes:
+      label: Azure DevOps
+      options:
+        - Azure DevOps Services (dev.azure.com)
+        - Azure DevOps Server 2022
+        - Azure DevOps Server 2020
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you saw instead. Error text helps.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Click …
+        3. …
+  - type: input
+    id: model
+    attributes:
+      label: Model connection
+      description: Provider and model, no keys. For example "Azure OpenAI, gpt-4.1" or "StrideAI Models".
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Checks
+      options:
+        - label: This issue contains no keys, tokens, project content or personal data.
+          required: true

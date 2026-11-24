@@ -1,0 +1,19 @@
+name: Question
+description: Ask how to do something. Check the documentation first.
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Search the [documentation](https://aistride.dev/docs/) first; it answers most questions. No keys, project content or personal data, please.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: Context
+      description: Extension, Azure DevOps Services or Server, and what you already tried.
